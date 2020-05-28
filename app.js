@@ -42,6 +42,10 @@ const item3 = new Item({
 const defaultItems = [item1,item2,item3];
 
 
+var d = new Date();
+var n = d.getFullYear();
+
+
 
 
 
@@ -65,7 +69,7 @@ app.get("/", function(req, res) {
 
     }
     else{
-      res.render("list", {listTitle: "Today", newListItems: result});
+      res.render("list", {listTitle: "Today", year:n, newListItems: result});
     }
  
    
