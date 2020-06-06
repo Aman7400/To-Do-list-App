@@ -149,7 +149,7 @@ app.get("/:customListName",function(req,res){
       
       }
       else{
-        res.render("list", {listTitle: foundList.name, newListItems: foundList.items});
+        res.render("list", {listTitle: foundList.name,year:n, newListItems: foundList.items});
         
       }
     }
